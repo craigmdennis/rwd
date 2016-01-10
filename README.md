@@ -4,7 +4,7 @@ Generate responsive CSS classes using a single SCSS mixin and a variable map
 ## Installation
 Downaload and `@import` into your main `scss` file
 
-### Create a $breakpoints map
+### Create breakpoints
 The current syntax is set up to use Bourbon Neat's `@media` mixin
 ```scss
 $breakpoints: (
