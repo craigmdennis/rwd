@@ -1,7 +1,7 @@
 # RWD
 Generate responsive CSS classes using a single SCSS mixin and a variable map
 
-[See the demo](http://codepen.io/anon/embed/Qydewy?slug-hash=Qydewy&default-tab=result)
+[Edit on CodePen](http://codepen.io/craigmdennis/pen/Qydewy)
 
 ## Installation
 Downaload and `@import` into your main `scss` file
