@@ -17,6 +17,7 @@ $breakpoints: (
 ```
 
 ### Call the mixin
+This will output content with the base class name as well as any breakpoints specified.
 ```scss
 .component {
   @include rwd( mobile tablet hd ) {
@@ -24,7 +25,24 @@ $breakpoints: (
     background: black;
   }
 }
+
+// .component {}
+// .component--MQmobile {}
+// .component--MQtablet {}
+// .component--MQhd {}
 ```
+If you only want a specific breakpoint and *no* base class, pass `false` as the second argument
+```scss
+.component {
+  @include rwd( mobile, false ) {
+    color: white;
+    background: black;
+  }
+}
+
+// .component--MQmobile {}
+```
+
 
 ### Use the classes
 ```html
