@@ -1,0 +1,28 @@
+{
+  "name": "rwd",
+  "version": "1.0.0",
+  "description": "Generate responsive CSS classes",
+  "main": "rwd.scss",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigmdennis/rwd.git"
+  },
+  "keywords": [
+    "css",
+    "rwd",
+    "responsive",
+    "BEM",
+    "BEMIT",
+    "modular",
+    "scalable"
+  ],
+  "author": "Craig Dennis <craig@simplebitdesign.com> (http://simplebitdesign.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigmdennis/rwd/issues"
+  },
+  "homepage": "https://github.com/craigmdennis/rwd#readme"
+}
