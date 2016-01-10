@@ -1,0 +1,18 @@
+@mixin rwd( $names: (), $outputContent: true ) {
+  
+  @if $outputContent {
+    @content;
+  }
+  
+  @each $name in $names {
+    @each $bp in $breakpoints {
+      @if nth($bp,1) == $name {
+        &---MQ#{nth($bp, 1)} {
+          @include media( nth($bp, 2) ) {
+            @content;
+          }
+        } 
+      }
+    }
+  }
+}
