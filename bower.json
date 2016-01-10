@@ -1,6 +1,6 @@
 {
-  "name": "rwd",
-  "version": "1.0.1",
+  "name": "rwdcss",
+  "version": "1.0.2",
   "description": "Generate responsive CSS classes",
   "main": "rwd.scss",
   "authors": [
@@ -16,7 +16,7 @@
     "modular",
     "scalable"
   ],
-  "homepage": "https://github.com/craigmdennis/rwd#readme",
+  "homepage": "https://github.com/craigmdennis/rwdcss#readme",
   "moduleType": [],
   "ignore": [
     "**/.*",
