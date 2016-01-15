@@ -43,6 +43,21 @@ If you only want a specific breakpoint and *no* base class, pass `false` as the 
 // .component--MQmobile {}
 ```
 
+If you want to change the prefix on the fly you can pass `true` to the second argument and any string to the third. In this case the BEMIT escaped `@` symbol is used.
+
+NOTE: Don't include the backslash in the HTML; it is purely to escape that character in CSS / SCSS
+```scss
+.component {
+  @include rwd( mobile, true, \@ ) {
+    color: white;
+    background: black;
+  }
+}
+
+// .component\@mobile {}
+// <div class="component@mobile">This is only black <b>upto 48em</b></div>
+```
+
 
 ### Use the classes
 ```html
