@@ -48,8 +48,10 @@ If you want to change the prefix you can add a settings map to your variables fi
 
 ```scss
 $rwdcss: (
-  prefix: \@ // Default is "---MQ"
+  prefix: \@
 );
+
+// Default is "---MQ"
 ```
 
 NOTE: Don't include the backslash in the HTML; it is purely to escape that character in CSS / SCSS
