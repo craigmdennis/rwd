@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2016-04-04
+
+### Added
+- Global option for prefix
+
+### Breaking Changes
+- You can no longer specify a prefix on the fly in the mixin call.
+
 ## [1.1.0] - 2016-01-15
 
 ### Added
