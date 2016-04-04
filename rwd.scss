@@ -1,15 +1,37 @@
-@mixin rwd( $names: (), $outputContent: true, $prefix: "---MQ" ) {
+@mixin rwd( $names: (), $outputContent: true) {
+
+  $rwdcss-options: (
+    prefix: "---MQ"
+  );
+  
+  // Check if there are custom options set
+  @if global-variable-exists(rwdcss) {
+    // Merge them with the defaults
+    $rwdcss-options: map_merge($rwdcss-options, $rwdcss);
+  }
   
   @if $outputContent {
     @content;
   }
   
+  $prefix: map-get($rwdcss-options, prefix);
+  
   @each $name in $names {
     @each $bp in $breakpoints {
       @if nth($bp,1) == $name {
         &#{$prefix}#{nth($bp, 1)} {
-          @include media( nth($bp, 2) ) {
-            @content;
+          @if mixin-exists(media) {
+            @include media( nth($bp, 2) ) {
+              @content;
+            }
+          }
+          @else if mixin-exists(breakpoint) {
+            @include breakpoint( nth($bp, 2) ) {
+              @content;
+            }
+          }
+          @else {
+            @error "No media query mixin detected. Please use Bourbon Neat or Breakpoint.";
           }
         } 
       }

@@ -7,7 +7,7 @@ Generate responsive CSS classes using a single SCSS mixin and a variable map
 Downaload and `@import` into your main `scss` file
 
 ### Create breakpoints
-The current syntax is set up to use Bourbon Neat's `@media` mixin
+The current syntax is set up to use Bourbon Neat's `media` Breakpoint's `breakpoint` mixin.
 ```scss
 $breakpoints: (
   mobile: max-width 47.9375em,
@@ -43,12 +43,19 @@ If you only want a specific breakpoint and *no* base class, pass `false` as the 
 // .component--MQmobile {}
 ```
 
-If you want to change the prefix on the fly you can pass `true` to the second argument and any string to the third. In this case the BEMIT escaped `@` symbol is used.
+### Global settings
+If you want to change the prefix you can add a settings map to your variables file
+
+```scss
+$rwdcss: (
+  prefix: \@ // Default is "---MQ"
+);
+```
 
 NOTE: Don't include the backslash in the HTML; it is purely to escape that character in CSS / SCSS
 ```scss
 .component {
-  @include rwd( mobile, true, \@ ) {
+  @include rwd( mobile, true ) {
     color: white;
     background: black;
   }
