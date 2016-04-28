@@ -2,7 +2,7 @@
   "name": "rwdcss",
   "version": "2.0.1",
   "description": "Generate responsive CSS classes",
-  "main": "rwd.scss",
+  "main": "index.es6",
   "devDependencies": {},
   "scripts": {},
   "repository": {
@@ -16,12 +16,17 @@
     "BEM",
     "BEMIT",
     "modular",
-    "scalable"
+    "scalable",
+    "eyeglass-module"
   ],
   "author": "Craig Dennis <craig@simplebitdesign.com> (http://simplebitdesign.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/craigmdennis/rwdcss/issues"
   },
-  "homepage": "https://github.com/craigmdennis/rwdcss#readme"
+  "homepage": "https://github.com/craigmdennis/rwdcss#readme",
+  "eyeglass": {
+    "needs": "*",
+    "exports": "eyeglass-exports.es6"
+  }
 }
