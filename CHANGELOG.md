@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.1] - 2016-04-29
+### Changed
+- Bumped version numbers for consistency
+
+## [2.1.0] - 2016-04-28
+### Added
+- Eyeglass support
+
 ## [2.0.1] - 2016-04-04
 
 ### Docs
